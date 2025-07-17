@@ -1,0 +1,29 @@
+name: dialoger
+description: Приложение для изучения немецкого языка
+version: 1.0.0+1  # Формат: версия+build_number
+
+environment:
+  sdk: '>=3.8.0 <4.0.0'  # Обязательное ограничение Dart SDK
+  flutter: '>=3.22.0'     # Минимальная версия Flutter
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6  # Иконки для iOS (обязательно для новых проектов)
+  flutter_tts: ^3.6.3      # Для озвучки
+  firebase_core: ^2.15.0   # Для Firebase
+  http: ^0.13.5            # Для API (DeepSeek/OpenAI)
+  flutter_bloc: ^8.1.3     # Рекомендую для управления состоянием
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0    # Для анализа кода
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/cards/         # Папка с карточками Anki
+    - assets/audio/         # Рекомендую добавить для аудиофайлов
+    - assets/images/        # Для будущих изображений
+
